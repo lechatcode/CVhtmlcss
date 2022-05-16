@@ -1,0 +1,545 @@
+@font-face {
+    font-family: "Work sans";
+    src: url(font/static/WorkSans-Thin.ttf);
+}
+
+/* NAVIGATION BLOCK  */
+
+nav {
+    background-color: rgba(0, 0, 0, 0.74);
+    height: 4em;
+    line-height: 4em;
+    text-align: center;
+    box-shadow: 3px 3px 10px rgb(168, 168, 168);
+    border-radius: 7px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    display: inline-block;
+    margin: 0 35px;
+}
+nav a:link {
+    font-family: 'Work sans', 'Arial';
+    font-weight: bolder;
+    font-size: larger;
+    text-decoration: none;
+    padding: 0.5em;
+    text-transform: uppercase;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+nav ul li img {
+    padding: 0.5em;
+}
+
+nav a:hover {
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+nav a:visited {
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+#homeNav, #cinemaNav, #filmNav, #mentionsNav {
+    width: 20px;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+body {
+    margin: 1em 20%;
+    background-color:rgb(37, 37, 37);
+    color: rgba(255, 255, 255, 0.885);
+    font-family: Helvetica, Arial, sans-serif ;
+}
+
+main {
+    background-color: rgb(24, 24, 24);
+}
+
+/* HOME MAIN POSTER BLOCK */
+
+.affiche {
+    display: flex;
+    margin: 2em;
+}
+
+#tontons {
+    width: 400px;
+    height: auto;
+}
+
+#mentionsLegales {
+    padding: 1em;
+    color: rgba(255, 255, 255, 0.836);
+}
+
+#mentionsLegales a {
+    color: #3aa8a3;
+}
+
+h1, h2, h3 {
+    color: rgba(255, 255, 255, 1);
+}
+
+.leFilmAffiche {
+    text-align: center;
+}
+
+.afficheTitre, .afficheImage, .afficheEdito {
+    padding : 2em;
+    margin: auto;
+}
+
+.afficheImage {
+    text-align: center;
+}
+
+.borderTitle {
+    content: "";
+    border-top: solid 2px rgba(255, 255, 255, 0.37);
+    text-align: center;
+    margin-top: 45px;
+    padding-top: 10px;
+    font-size: xx-large;
+}
+
+.filmEnSalle, .dessinEnSalle, .concertEnSalle {
+    display: block;
+    box-sizing: content-box;
+    padding: 0.5em;    
+    text-align: center;
+}
+
+.posterFilm {
+    width: 24%;
+    padding: 0.2em;
+    height: 20%;
+}
+
+.h3Film {
+    text-align: center;
+    font-size: x-large;
+}
+
+.lesFilms {
+    display: flex;
+    padding: 0.5em 1.5em;
+}
+
+.pFilm {
+    padding: 1em;
+    font-size: larger;
+}
+
+.pGenre {
+    padding: 2em 1em;
+    font-style: italic;
+    text-align: center;
+}
+
+/* BUTTON BLOCK */
+
+.divButton {
+    text-align: center;
+    padding-bottom: 3em;
+}
+
+.fButton {
+    padding: 2em;
+    background-color:#51706f;
+	border-top: 2px solid #78a5a3;
+    border-bottom: 2px solid #78a5a3;
+	display: inline-block;
+	cursor: pointer;
+	color:#ffffff;
+	font-family: "Work sans", Arial;
+	font-size: 17px;
+	padding: 11px 29px;
+	text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    box-shadow: 3px 3px 10px #ffffff3a ;
+}
+
+.fButton:hover {
+	background-color:#3aa8a3;
+}
+
+.fButton:active {
+	position:relative;
+	top:1px;
+}
+
+/* POSTER PANEL BLOCK */
+
+.posterToutSeul {
+    position: relative;
+    width: 100%;
+    padding: 1.5em 0.5em;
+}
+  
+.posterToutSeulImage {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .7s ease;
+    background-color: rgb(24, 24, 24);
+}
+  
+.posterToutSeul:hover .overlay {
+    opacity: 0.9;
+}
+  
+.text1 {
+    color: white;
+    font-size: 24px;
+        /* Pour centrer mon élément absolu, left: 50% et translate: -50% */
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -40%);
+    text-transform: uppercase;
+}
+
+.text2 {
+    color: rgba(255, 255, 255, 0.836);
+    font-size: 20px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -35%); 
+}
+
+.text3 {
+    color: rgba(255, 255, 255, 0.836);
+    font-size: 16px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text4 {
+    color: rgba(255, 255, 255, 0.836);
+    font-size: 15px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.panel {
+    display: flex;
+}
+
+/* Tableau */
+
+table {
+    padding: 1.5em;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 100%;
+}
+
+td {
+    padding: 1em;
+    text-align: center;
+    background: linear-gradient(to bottom, #16161680, rgba(0, 0, 0, 0.712));
+    color: rgba(255, 255, 255, 0.836);
+    border: 1px solid rgba(255, 255, 255, 0.26);
+}
+
+th {
+    border: 1px solid #4b4b4b;
+    text-align: center;
+    padding: 1em;
+    background: linear-gradient(to bottom, #81818180, rgba(0, 0, 0, 0.712));
+    color: rgba(255, 255, 255, 1)
+}
+
+#message {
+    height: 150px;
+}
+
+/* FORM */
+
+#formDiv {
+    margin: 0 auto;
+    width: 60%;
+}
+
+ /* Input */ 
+ #formContact input { 
+	background-color:#464646;
+	border:solid 1px #acacac;
+	font-size:15px;
+	color:#f3f6f4;
+	border-radius:0px;
+    padding: 5px 10px;
+	width:100%;
+	box-sizing:border-box;
+}
+
+/* Labels */ 
+ .labelForm {
+	font-size:16px;
+	color:#ffffff;
+	font-weight:normal;
+	padding: 10px 0;
+	float:none;
+	text-align:left;
+	width:auto;
+	display:block;
+}
+
+/* Button */ 
+ #formButton {
+	margin: 20px;
+	background-color:#51706f;
+	border: 2px solid #78a5a3;
+	font-size:16px;
+	color:white;
+    padding: 10px 30px;
+    text-align: center;
+}
+
+#formButton:hover {
+	background-color:#3aa8a3;
+    cursor: pointer;
+}
+
+.divButton {
+    text-align: center;
+}
+
+/* CONTACT INFO */
+
+.contactDiv {
+    display: flex;
+    padding: 10px;
+}
+
+.carreContact {
+    padding: 10px;
+    margin: 15px;
+    text-align: center;
+    background: linear-gradient(to top, black, #78a5a3);
+    border: solid 1px rgba(255, 255, 255, 0.582);
+    border-radius: 15px;
+    box-shadow: 1px 0px 5px 1px rgba(202, 202, 202, 0.699);
+    color: rgba(255, 255, 255, 0.76);
+}
+
+.nousRetrouver {
+    margin: 10px 7%;
+    padding: 10px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1900px) {
+    .text4 {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    nav li {
+        display:contents;
+    }
+    #tontons {
+        width: 200px;
+    }
+    .text2 {
+        visibility: hidden;
+    }
+    .text3 {
+        visibility: hidden;
+    }
+    .text4 {
+        top: 60%;
+    }
+    body {
+        margin: 1em 18%;
+    }
+    #horairesTable {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .affiche {
+        display: block;
+    }
+    #tontons {
+        width: 300px;
+    }
+    .text1 {
+        font-size: 16px;
+    }
+    .text4 {
+        font-size: 12px;
+    }
+    body {
+        margin: 10px 5%;
+    }
+}
+
+@media screen and (max-width: 1049px) {
+    nav {
+        height: 8em;
+        line-height: 8em;
+    }
+    nav li {
+        display: list-item;
+    }
+    .text1 {
+        top: 50%;
+    }
+    .text4 {
+        visibility: hidden;
+    }
+    .containerResponsive {
+        visibility: visible;
+    }
+    #horairesTable {
+        display: none;
+    }
+    .lesFilms {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    .containerResponsive {
+        display:none ;    
+    }
+    #horairesTable {
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #tontons {
+        width: 180px;
+    }
+    .text1 {
+        font-size: 10px;
+    }
+    body {
+        margin: 2%;
+    }
+    .contactDiv {
+        display: block;
+        margin: 15px 15%;
+    }
+}
+
+/* BOUTON AFFICHER HORAIRES PETIT ECRAN */
+
+.labelHoraires {
+    display: inline-block;
+    margin: 15px 15px;
+    color: #3aa8a3;
+    cursor: pointer;
+    margin: 0;
+    margin-bottom: 30px;
+	background-color:#51706f;
+	border: 2px solid #78a5a3;
+	font-size: 15px;
+	color:white;
+    padding: 5px 10px;
+}
+
+.labelHoraires:after {
+	background-color:#51706f;
+	border: 2px solid #78a5a3;
+	font-size: 15px;
+	color:white;
+    padding: 5px 10px;
+}
+
+.containerResponsive {
+    text-align: center;
+}
+
+/* HORAIRES CACHEES PETIT ECRAN */
+
+.displayNone {
+    display: none;
+}
+
+#checkJohn:checked ~ .contentResponsive,
+#checkBlues:checked ~ .contentResponsive,
+#checkReservoirDogs:checked ~ .contentResponsive,
+#checkTheRoom:checked ~ .contentResponsive,
+#checkLOTR1:checked ~ .contentResponsive,
+#checkLOTR2:checked ~ .contentResponsive,
+#checkLOTR3:checked ~ .contentResponsive,
+#checkTontons:checked ~ .contentResponsive,
+#checkChihiro:checked ~ .contentResponsive,
+#checkGeant:checked ~ .contentResponsive,
+#checkPaprika:checked ~ .contentResponsive,
+#checkPonyo:checked ~ .contentResponsive {
+    display: block;
+}
+
+#checkJohn:checked ~ label,
+#checkBlues:checked ~ label,
+#checkReservoirDogs:checked ~ label,
+#checkTheRoom:checked ~ label,
+#checkLOTR1:checked ~ label,
+#checkLOTR2:checked ~ label,
+#checkLOTR3:checked ~ label,
+#checkTontons:checked ~ label,
+#checkChihiro:checked ~ label,
+#checkGeant:checked ~ label,
+#checkPaprika:checked ~ label,
+#checkPonyo:checked ~ label {
+    visibility: hidden;
+}
+
+#checkJohn:checked ~ label:after,
+#checkBlues:checked ~ label:after,
+#checkReservoirDogs:checked ~ label:after,
+#checkTheRoom:checked ~ label:after,
+#checkLOTR1:checked ~ label:after,
+#checkLOTR2:checked ~ label:after,
+#checkLOTR3:checked ~ label:after,
+#checkTontons:checked ~ label:after,
+#checkChihiro:checked ~ label:after,
+#checkGeant:checked ~ label:after,
+#checkPaprika:checked ~ label:after,
+#checkPonyo:checked ~ label:after {
+    content: "Cacher";
+    display: block;
+    visibility: visible;
+}
+

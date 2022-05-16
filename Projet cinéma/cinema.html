@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css"> 
+    <script src="script.js" defer></script>
+    <title>Horaires et présentation du cinéma</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <ul>          
+                <li><a href="index.html"><img src="home.png" alt="Home" id="homeNav">Accueil</a></li>
+                <li><a href="cinema.html"><img src="cinemanav.png" alt="Cinéma" id="cinemaNav">Cinéma</a></li>
+                <li><a href="films.html"><img src="filmnav.png" alt="Films" id="filmNav">Films</a></li>
+                <li><a href="mentions.html"><img src="mentionsnav.png" alt="Mentions Légales" id="mentionsNav">Mentions légales</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="borderTitle">
+            <h1>Votre cinéma</h1>
+        </div>
+        
+        <h2 class="borderTitle">Les horaires</h2>
+
+        <div>
+            <table id="horairesTable">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Lundi</th>
+                        <th scope="col">Mardi</th>
+                        <th scope="col">Mercredi</th>
+                        <th scope="col">Jeudi</th>
+                        <th scope="col">Vendredi</th>
+                        <th scope="col">Samedi</th>
+                        <th scope="col">Dimanche</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">John Wick</th>
+                        <td colspan="2">14h-17h-21h</td>
+                        <td>13h-16h-20h</td>
+                        <td>15h-18h-22h</td>
+                        <td>16h-19h-23h</td>
+                        <td>13h-16h-20h</td>
+                        <td rowspan="2">15h-18h-22h</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">The Blues Brothers</th>
+                        <td>15h-18h-22h</td>
+                        <td>13h-16h-20h</td>
+                        <td colspan="2">14h-17h-21h</td>
+                        <td>15h-18h-22h</td>
+                        <td>14h-17h-21h</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Reservoir Dogs</th>
+                        <td colspan="2">14h-17h-21h</td>
+                        <td>15h-18h-22h</td>
+                        <td>13h-16h-20h</td>
+                        <td>14h-17h-21h</td>
+                        <td>15h-18h-22h</td>
+                        <td rowspan="2">16h-19h-23h</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">The Room</th>
+                        <td>13h-16h-20h</td>
+                        <td>15h-18h-22h</td>
+                        <td colspan="2">14h-17h-21h</td>
+                        <td>13h-16h-20h</td>
+                        <td>16h-19h-23h</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">La Communauté de l'Anneau</th>
+                        <td colspan="2">14h-17h-21h</td>
+                        <td>13h-16h-20h</td>
+                        <td>15h-18h-22h</td>
+                        <td>16h-19h-23h</td>
+                        <td>13h-16h-20h</td>
+                        <td rowspan="2">15h-18h-22h</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Les Deux Tours</th>
+                        <td>15h-18h-22h</td>
+                        <td>13h-16h-20h</td>
+                        <td colspan="2">14h-17h-21h</td>
+                        <td>15h-18h-22h</td>
+                        <td>14h-17h-21h</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Le Retour du Roi</th>
+                        <td colspan="2">14h-17h-21h</td>
+                        <td>15h-18h-22h</td>
+                        <td>13h-16h-20h</td>
+                        <td>14h-17h-21h</td>
+                        <td>15h-18h-22h</td>
+                        <td rowspan="2">16h-19h-23h</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Les Tontons Flingueurs</th>
+                        <td>13h-16h-20h</td>
+                        <td>15h-18h-22h</td>
+                        <td colspan="2">14h-17h-21h</td>
+                        <td>13h-16h-20h</td>
+                        <td>16h-19h-23h</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Le voyage de Chihiro</th>
+                        <td colspan="2">14h-17h-21h</td>
+                        <td>13h-16h-20h</td>
+                        <td>15h-18h-22h</td>
+                        <td colspan="2">13h-16h-20h</td>
+                        <td rowspan="2">13h-16h-20h</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Le géant de fer</th>
+                        <td>15h-18h-22h</td>
+                        <td>13h-16h-20h</td>
+                        <td colspan="2">14h-17h-21h</td>
+                        <td colspan="2">14h-17h-21h</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Paprika</th>
+                        <td colspan="2">14h-17h-21h</td>
+                        <td>15h-18h-22h</td>
+                        <td>13h-16h-20h</td>
+                        <td colspan="2">15h-18h-22h</td>
+                        <td rowspan="2">14h-17h-21h</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Ponyo sur la falaise</th>
+                        <td>13h-16h-20h</td>
+                        <td>15h-18h-22h</td>
+                        <td colspan="2">14h-17h-21h</td>
+                        <td colspan="2">16h-19h-23h</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="containerResponsive">
+                <input type="checkbox" id="checkJohn" class="displayNone">
+                    <h3>John Wick</h3>
+                    <div class="contentResponsive displayNone">
+                        <p><b>Lundi</b> : 14h-17h-21h</p>
+                        <p><b>Mardi</b> : 13h-16h-20h</p>
+                        <p><b>Mercredi</b> : 13h-16h-20h</p>
+                        <p><b>Jeudi</b> : 15h-18h-22h</p>
+                        <p><b>Vendredi</b> : 16h-19h-23h</p>
+                        <p><b>Samedi</b> : 13h-16h-20h</p>
+                        <p><b>Dimanche</b> : 15h-18h-22h</p>
+                    </div>
+                <label for="checkJohn" class="labelHoraires">Afficher les horaires</label>
+            </div>
+
+            <div class="containerResponsive">
+                <input type="checkbox" id="checkBlues" class="displayNone">
+                    <h3>The Blues Brothers</h3>
+                    <div class="contentResponsive displayNone">
+                        <p><b>Lundi</b> : 15h-18h-22h</p>
+                        <p><b>Mardi</b> : 13h-16h-20h</p>
+                        <p><b>Mercredi</b> : 14h-17h-21h</p>
+                        <p><b>Jeudi</b> : 14h-17h-21h</p>
+                        <p><b>Vendredi</b> : 15h-18h-22h</p>
+                        <p><b>Samedi</b> : 14h-17h-21h</p>
+                        <p><b>Dimanche</b> : 15h-18h-22h</p>
+                    </div>
+                <label for="checkBlues" class="labelHoraires">Afficher les horaires</label>
+            </div>
+
+            <div class="containerResponsive">
+                <input type="checkbox" id="checkReservoirDogs" class="displayNone">
+                    <h3>Reservoir Dogs</h3>
+                    <div class="contentResponsive displayNone">
+                        <p><b>Lundi</b> : 14h-17h-21h</p>
+                        <p><b>Mardi</b> : 14h-17h-21h</p>
+                        <p><b>Mercredi</b> : 15h-18h-22h</p>
+                        <p><b>Jeudi</b> : 13h-16h-20h</p>
+                        <p><b>Vendredi</b> : 14h-17h-21h</p>
+                        <p><b>Samedi</b> : 15h-18h-22h</p>
+                        <p><b>Dimanche</b> : 16h19h23h</p>
+                    </div>
+                <label for="checkReservoirDogs" class="labelHoraires">Afficher les horaires</label>
+            </div>
+
+            <div class="containerResponsive">
+                <input type="checkbox" id="checkTheRoom" class="displayNone">
+                    <h3>The Room</h3>
+                    <div class="contentResponsive displayNone">
+                        <p><b>Lundi</b> : 13h-16h-20h</p>
+                        <p><b>Mardi</b> : 15h-18h-22h</p>
+                        <p><b>Mercredi</b> : 14h-17h-21h</p>
+                        <p><b>Jeudi</b> : 14h-17h-21h</p>
+                        <p><b>Vendredi</b> : 13h-16h-20h</p>
+                        <p><b>Samedi</b> : 16h19h23h</p>
+                        <p><b>Dimanche</b> : 16h19h23h</p>
+                    </div>
+                <label for="checkTheRoom" class="labelHoraires">Afficher les horaires</label>
+            </div>
+
+            <div class="containerResponsive">
+                <input type="checkbox" id="checkLOTR1" class="displayNone">
+                    <h3>La communauté de l'Anneau</h3>
+                    <div class="contentResponsive displayNone">
+                        <p><b>Lundi</b> : 14h-17h-21h</p>
+                        <p><b>Mardi</b> : 14h-17h-21h</p>
+                        <p><b>Mercredi</b> : 13h-16h-20h</p>
+                        <p><b>Jeudi</b> : 15h-18h-22h</p>
+                        <p><b>Vendredi</b> : 16h-19h-23h</p>
+                        <p><b>Samedi</b> : 13h-16h-20h</p>
+                        <p><b>Dimanche</b> : 15h-18h-22h</p>
+                    </div>
+                <label for="checkLOTR1" class="labelHoraires">Afficher les horaires</label>
+            </div>
+
+            <div class="containerResponsive">
+                <input type="checkbox" id="checkLOTR2" class="displayNone">
+                    <h3>Les Deux Tours</h3>
+                    <div class="contentResponsive displayNone">
+                        <p><b>Lundi</b> : 15h-18h-22h</p>
+                        <p><b>Mardi</b> : 13h-16h-20h</p>
+                        <p><b>Mercredi</b> : 14h-17h-21h</p>
+                        <p><b>Jeudi</b> : 14h-17h-21h</p>
+                        <p><b>Vendredi</b> : 15h-18h-22h</p>
+                        <p><b>Samedi</b> : 14h-17h-21h</p>
+                        <p><b>Dimanche</b> : 15h-18h-22h</p>
+                    </div>
+                <label for="checkLOTR2" class="labelHoraires">Afficher les horaires</label>
+            </div>
+
+            <div class="containerResponsive">
+                <input type="checkbox" id="checkLOTR3" class="displayNone">
+                    <h3>Le Retour du Roi</h3>
+                    <div class="contentResponsive displayNone">
+                        <p><b>Lundi</b> : 14h-17h-21h</p>
+                        <p><b>Mardi</b> : 14h-17h-21h</p>
+                        <p><b>Mercredi</b> : 15h-18h-22h</p>
+                        <p><b>Jeudi</b> : 13h-16h-20h</p>
+                        <p><b>Vendredi</b> : 14h-17h-21h</p>
+                        <p><b>Samedi</b> : 15h-18h-22h</p>
+                        <p><b>Dimanche</b> : 16h19h23h</p>
+                    </div>
+                <label for="checkLOTR3" class="labelHoraires">Afficher les horaires</label>
+            </div>
+
+            <div class="containerResponsive">
+                <input type="checkbox" id="checkTontons" class="displayNone">
+                    <h3>Les Tontons Flingueurs</h3>
+                    <div class="contentResponsive displayNone">
+                        <p><b>Lundi</b> : 13h-16h-20h</p>
+                        <p><b>Mardi</b> : 15h-18h-22h</p>
+                        <p><b>Mercredi</b> : 14h-17h-21h</p>
+                        <p><b>Jeudi</b> : 14h-17h-21h</p>
+                        <p><b>Vendredi</b> : 13h-16h-20h</p>
+                        <p><b>Samedi</b> : 16h19h23h</p>
+                        <p><b>Dimanche</b> : 16h19h23h</p>
+                    </div>
+                <label for="checkTontons" class="labelHoraires">Afficher les horaires</label>
+            </div>
+
+            <div class="containerResponsive">
+                <input type="checkbox" id="checkChihiro" class="displayNone">
+                    <h3>Le Voyage de Chihiro</h3>
+                    <div class="contentResponsive displayNone">
+                        <p><b>Lundi</b> : 14h-17h-21h</p>
+                        <p><b>Mardi</b> : 14h-17h-21h</p>
+                        <p><b>Mercredi</b> : 13h-16h-20h</p>
+                        <p><b>Jeudi</b> : 15h-18h-22h</p>
+                        <p><b>Vendredi</b> : 13h-16h-20h</p>
+                        <p><b>Samedi</b> : 13h-16h-20h</p>
+                        <p><b>Dimanche</b> : 13h-16h-20h</p>
+                    </div>
+                <label for="checkChihiro" class="labelHoraires">Afficher les horaires</label>
+            </div>
+
+            <div class="containerResponsive">
+                <input type="checkbox" id="checkGeant" class="displayNone">
+                    <h3>Le Voyage de Chihiro</h3>
+                    <div class="contentResponsive displayNone">
+                        <p><b>Lundi</b> : 15h-18h-22h</p>
+                        <p><b>Mardi</b> : 13h-16h-20h</p>
+                        <p><b>Mercredi</b> : 14h-17h-21h</p>
+                        <p><b>Jeudi</b> : 14h-17h-21h</p>
+                        <p><b>Vendredi</b> : 14h-17h-21h</p>
+                        <p><b>Samedi</b> : 14h-17h-21h</p>
+                        <p><b>Dimanche</b> : 13h-16h-20h</p>
+                    </div>
+                <label for="checkGeant" class="labelHoraires">Afficher les horaires</label>
+            </div>
+
+            <div class="containerResponsive">
+                <input type="checkbox" id="checkPaprika" class="displayNone">
+                    <h3>Le Voyage de Chihiro</h3>
+                    <div class="contentResponsive displayNone">
+                        <p><b>Lundi</b> : 14h-17h-21h</p>
+                        <p><b>Mardi</b> : 14h-17h-21h</p>
+                        <p><b>Mercredi</b> : 15h-18h-22h</p>
+                        <p><b>Jeudi</b> : 13h-16h-20h</p>
+                        <p><b>Vendredi</b> : 15h-18h-22h</p>
+                        <p><b>Samedi</b> : 15h-18h-22h</p>
+                        <p><b>Dimanche</b> : 14h-17h-21h</p>
+                    </div>
+                <label for="checkPaprika" class="labelHoraires">Afficher les horaires</label>
+            </div>
+
+            <div class="containerResponsive">
+                <input type="checkbox" id="checkPonyo" class="displayNone">
+                    <h3>Le Voyage de Chihiro</h3>
+                    <div class="contentResponsive displayNone">
+                        <p><b>Lundi</b> : 13h-16h-20h</p>
+                        <p><b>Mardi</b> : 15h-18h-22h</p>
+                        <p><b>Mercredi</b> : 14h-17h-21h</p>
+                        <p><b>Jeudi</b> : 14h-17h-21h</p>
+                        <p><b>Vendredi</b> : 16h19h23h</p>
+                        <p><b>Samedi</b> : 16h19h23h</p>
+                        <p><b>Dimanche</b> : 14h-17h-21h</p>
+                    </div>
+                <label for="checkPonyo" class="labelHoraires">Afficher les horaires</label>
+            </div>
+
+        </div>
+
+
+        <h2 class="borderTitle">Nous contacter</h2>
+
+        <div id="formDiv">
+            <form action="#" method="post" id="formContact">
+                <div>
+                    <label for="lastname" class="labelForm">Nom :</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Nom">
+                </div>
+                <div>
+                    <label for="firstname"  class="labelForm">Prénom :</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="Prénom">
+                </div>
+                <div>
+                    <label for="email"  class="labelForm">Votre adresse email :</label>
+                    <input type="email" id="email" name="email" placeholder="Email">
+                </div>
+                <div>
+                    <label for="subject"  class="labelForm">Sujet du message :</label>
+                    <input type="text" id="subject" name="subject" placeholder="Sujet du message">
+                </div>
+                <div>
+                    <label for="message"  class="labelForm">Votre message :</label>
+                    <input type="text" id="message" name="message" placeholder="Votre message" size="50">
+                </div>
+                <div class="divButton">
+                    <button type="submit" id="formButton">Envoyer</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="contactDiv">
+            <div class="carreContact">
+                <h3>Service clientèle</h3>
+                <p>Du Lundi au Vendredi, de 13h à 20h : 0123456789</p>
+                <p>Frères Lumières - Service Clientèle <br> 1892 rue Léon Bouly <br> 99000 LAVILLE</p>
+            </div>
+
+            <div class="carreContact">
+                <h3>Service abonnés</h3>
+                <p>Du Lundi au Samedi, de 10h à 20h : 0132546798</p>
+                <p>Frères Lumières - Service abonnés <br> 1892 rue Léon Bouly <br> 99000 LAVILLE</p>
+            </div>
+
+            <div class="carreContact">
+                <h3>Nous rejoindre</h3>
+                <p>Du Mardi au Vendredi, de 8h à 13h : 0129386754</p>
+                <p>Frères Lumières - Recrutement <br> 1892 rue Léon Bouly <br> 99000 LAVILLE</p>
+            </div>
+        </div>
+
+        <h2 class="borderTitle">Où nous retrouver</h2>
+
+        <div class="nousRetrouver">
+            <p><b>Retrouvez votre cinéma au 1892 rue Léon Bouly.</b></p>
+            <p>Le Cinéma Frères Lumières possède une salle 4K.</p>
+            <p>Votre cinéma propose les films en VO sous-titrés français.</p>
+            <p>Le cinéma est équipé de défibrillateurs</p>
+            <p>Votre cinéma propose des séances en audiodescription. Pour y assister, merci de prendre contact avec la direction du cinéma 48h avant votre venue.</p>
+        </div>
+        
+    </main>
+</body>
+</html>
